@@ -1,0 +1,13 @@
+extends layout 
+
+
+block content 
+    form(action="" method="post")
+        label.text-black(for="ville") ville 
+        input#ville.btn.text-black(type="text" name="ville") 
+        label.text-black(for="governorat") governorat
+        input#governorat.btn.text-black(type="text" name="governorat") 
+        label.text-black(for="village") village 
+        input#village.btn.text-black(type="text" name="village") 
+
+        input.btn-success(type="submit" value="Enregistrer")

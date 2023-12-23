@@ -1,0 +1,26 @@
+<!-- views/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liste de Tâches</title>
+</head>
+<body>
+  <h1>Liste de Tâches</h1>
+
+  <ul>
+    <% tasks.forEach(task => { %>
+      <li><%= task %></li>
+    <% }); %>
+  </ul>
+
+  <form action="/addTask" method="post">
+    <label for="newTask">Nouvelle Tâche :</label>
+    <input type="text" id="newTask" name="newTask" required>
+    <button type="submit">Ajouter</button>
+  </form>
+</body>
+</html>

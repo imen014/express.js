@@ -1,0 +1,12 @@
+extends layout 
+
+
+block content 
+    h2.text-success users list
+    ul 
+        each user in result
+            li 
+                i.text-info username  #{user.username} 
+                i.text-info email  #{user.email} 
+                i.text-info phone  #{user.phone} 
+                i.text-info role  #{user.role} 

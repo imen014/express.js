@@ -1,0 +1,12 @@
+extends layout 
+
+
+block content 
+    p #{rowsAffected} user created  succeffully 
+    ul.list-group 
+        li.list-item
+            a.btn.btn-outline-primary(href='/list_users') get users list 
+        li.list-item
+            a.btn.btn-outline-primary(href='/search_user_by_phone_number') search user by phone number
+        li.list-item
+            a.btn.btn-outline-primary(href='/search_user_by_email') search user by email

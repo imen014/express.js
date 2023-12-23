@@ -1,0 +1,22 @@
+extends layout 
+
+block content 
+    form.form-group(action="" method="post")
+        
+        input.btn-success(type="submit" value="obtenir  liste locations")
+
+    ul.list-group 
+        li.list-item
+            a.btn.btn-outline-primary(href='/search_location_by_village') search location by village
+        li.list-item
+            a.btn.btn-outline-primary(href='/search_locations_by_ville') search location by ville
+        li.list-item
+            a.btn.btn-outline-primary(href='/search_location_by_governorat') search location by governorat
+        li.list-item 
+            a.btn.btn-outline-primary(href='/set_location') create new location
+
+        li.list-item
+            a.btn.btn-outline-primary(href='/delete_location') delete location selected by governorat
+        li.list-item 
+            a.btn.btn-outline-primary(href='/update_location') update location village using city
+

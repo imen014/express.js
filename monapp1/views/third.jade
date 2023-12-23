@@ -1,0 +1,11 @@
+extends layout 
+
+
+
+block content 
+    h1#myh1 this is my third page
+    h2.myh2 this is my h2 element
+    label(for="username") username
+    input.username#username(type="text")
+    input(type="submit" , value="Valider")
+    p username: #{username}

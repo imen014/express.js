@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>form.php</title>
+<meta charset="UTF-8" />
+</head>
+<body>
+<h1>about ma page</h1>
+
+<form action="/page_form1" method="post">
+<label for="username">username</label>    
+<input type="text" name="username" id="username" />
+<input type="submit" value="Valider" onclick=" username_getting()"/>
+</form>
+
+<script defer>
+function username_getting(){
+    let username = document.getElementById("username").value;
+alert("bonjour");
+alert(username);
+
+}
+
+</script>
+
+
+</form>
+</body>
+</html>

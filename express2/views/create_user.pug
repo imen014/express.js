@@ -1,0 +1,11 @@
+extends layout 
+
+
+
+block content 
+    form(action="" method="post")
+        label(for="username") username 
+        input#username(type="text" name="username")
+        label(for="email") email
+        input#email(type="email" name="email")
+        input(type="submit" value="enregistrer")

@@ -1,0 +1,34 @@
+extends layout 
+
+
+block content 
+    h2.text-success users list
+    ul.list-group 
+        each user in result
+            li 
+                i.text-info.list-item username  #{user.username} 
+                i.text-info.list-item email  #{user.email} 
+                i.text-info.list-item phone  #{user.phone} 
+                i.text-info.list-item role  #{user.role} 
+
+    ul.list-group 
+        li.list-item
+            a.btn.btn-outline-primary(href='/create_user') create user
+        li.list-item
+            a.btn.btn-outline-primary(href='/search_user_by_phone_number') search user by phone number 
+        li.list-item
+            a.btn.btn-outline-primary(href='/search_user_by_email') search user by email
+        li.list-item
+            a.btn.btn-outline-primary(href='/delete_user') delete user 
+        li.list-item
+            a.btn.btn-outline-primary(href='/update_username') update username
+        li.list-item
+            a.btn.btn-outline-primary(href='/update_email') update email 
+        li.list-item
+            a.btn.btn-outline-primary(href='/search_user') search user by role
+        
+            
+            
+            
+            
+            

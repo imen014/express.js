@@ -1,0 +1,8 @@
+extends layout 
+
+block content 
+    form.form-group(action="" method="post")
+        label.text-black(for="village") entrer la village
+        input#village(type="text" placeholder="enter-village" name="village")
+        input.btn-success(type="submit" value="search locations by village")
+    

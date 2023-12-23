@@ -1,0 +1,10 @@
+extends layout 
+
+block content 
+    form.form-group(action="" method="post")
+        label.text-black(for="username") enter username
+        input#username(type="text" placeholder="enter-username" name="username")
+        label.text-black(for="phone") enter phone number
+        input#ville(type="text" placeholder="enter-phone-number" name="phone")
+        input.btn-success(type="submit" value="update username using phone number")
+    

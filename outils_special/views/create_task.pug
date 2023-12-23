@@ -1,0 +1,13 @@
+extends ./layout
+
+
+block content 
+    form.form-group(action="" method="post")
+        label(for="nom_task") task title 
+        input.form-item.text-info(type="text" placeholder="enter task title", name="task_title")
+        label(for="desciption") task discription 
+        input.form-item.text-info(type="text" placeholder="task description" name="task_description")
+        label(for="creator") task creator
+        input.form-item(type="text" placeholder="task creator" name="task_creator")
+        input.form-item.btn.btn-success(type="submit" value="Save task")
+

@@ -1,0 +1,19 @@
+extends layout 
+
+
+block content 
+    form(action="calculT" method="post")
+        label(for="number1") number1 
+        input#number1(type="text" name="number1")
+
+        label(for="number2") number2 
+        input#number2(type="text" name="number2")
+
+        select(name="operation")
+            option(name="selectionner operation" selected) selectionner operation
+            option(name="add") add
+            option(name="substract") substract
+            option(name="divide") divide
+            option(name="multiply") multiply
+
+        input(type="submit" name="Valider")

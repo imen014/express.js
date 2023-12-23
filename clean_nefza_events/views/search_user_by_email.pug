@@ -1,0 +1,8 @@
+extends layout 
+
+block content 
+    form.form-group(action="" method="post")
+        label.text-black(for="email") entrer email utilisateur
+        input#email(type="text" placeholder="enter-email" name="email")
+        input.btn-success(type="submit" value="search user by email")
+    

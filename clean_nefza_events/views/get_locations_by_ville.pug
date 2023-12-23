@@ -1,0 +1,11 @@
+extends layout 
+
+
+block content 
+    h2.text-success our locations by ville
+    ul 
+        each location in locations
+            li 
+                i.text-info ville  #{location.ville} 
+                i.text-info governorat  #{location.governorat} 
+                i.text-info village  #{location.village} 

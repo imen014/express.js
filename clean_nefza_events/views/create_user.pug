@@ -1,0 +1,15 @@
+extends layout 
+
+
+block content 
+    form(action="" method="post")
+        label.text-black(for="username") username 
+        input#username.btn.text-black(type="text" name="username") 
+        label.text-black(for="email") email
+        input#email.btn.text-black(type="text" name="email") 
+        label.text-black(for="phone") phone
+        input#phone.btn.text-black(type="text" name="phone") 
+        label.text-black(for="role") role
+        input#role.btn.text-black(type="text" name="role")
+
+        input.btn-success(type="submit" value="S'inscrire")

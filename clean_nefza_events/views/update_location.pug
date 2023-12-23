@@ -1,0 +1,10 @@
+extends layout 
+
+block content 
+    form.form-group(action="" method="post")
+        label.text-black(for="village") entrer la village
+        input#village(type="text" placeholder="enter-village" name="village")
+        label.text-black(for="ville") entrer la ville
+        input#ville(type="text" placeholder="enter-city" name="ville")
+        input.btn-success(type="submit" value="update village using city")
+    
